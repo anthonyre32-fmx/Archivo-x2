@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARCHIVO X | Freestyle League</title>
+<style>
+:root{--red:#8b0000;--bg:#080808;--panel:#141414;--gray:#858585;--white:#f3f3f3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif}
+header{background:#080808;border-bottom:1px solid #333;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:23px;letter-spacing:3px}
+.logo span,h1 span{color:#c01818}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#bbb;text-decoration:none;font-size:12px;text-transform:uppercase}
+nav a:hover{color:white}
+.hero{padding:100px 7%;min-height:470px;background:radial-gradient(ellipse at 85% 40%,#480707,transparent 45%),linear-gradient(120deg,#080808,#181818);border-bottom:1px solid #333}
+.tag{color:#ff6666;border:1px solid var(--red);padding:7px 10px;font-size:11px;letter-spacing:2px}
+h1{font-size:clamp(43px,9vw,82px);line-height:.98;margin:28px 0;letter-spacing:-2px}
+.hero p,.intro{color:#aaa;max-width:650px;line-height:1.7}
+.btn{display:inline-block;background:var(--red);color:white;padding:13px 18px;text-decoration:none;font-weight:bold;font-size:12px;border:1px solid var(--red);cursor:pointer}
+.btn:hover{background:#b00000}
+section{padding:65px 7%;border-bottom:1px solid #252525}
+.kicker{color:#f55;font-size:11px;letter-spacing:2px;font-weight:bold}
+h2{font-size:clamp(27px,5vw,42px);margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:25px}
+.card{background:var(--panel);border:1px solid #333;padding:22px}
+.card:hover{border-color:var(--red)}
+.id{font:12px monospace;color:#f66}
+.card h3{font-size:23px;margin:13px 0 5px}
+.muted{color:#aaa;font-size:13px;line-height:1.7}
+table{width:100%;border-collapse:collapse;margin-top:25px;background:#111}
+th,td{text-align:left;padding:14px;border-bottom:1px solid #333;font-size:13px}
+th{color:#f66;font-size:11px}
+.event{margin-top:25px;padding:25px;background:linear-gradient(100deg,#390505,#151515);border:1px solid #542020}
+.rounds{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;margin-top:25px}
+.match{padding:15px;background:#111;border:1px solid #333;margin-top:10px;font-size:13px}
+.match div+div{border-top:1px solid #333;margin-top:9px;padding-top:9px}
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;max-width:800px;margin-top:25px}
+label{font-size:11px;color:#bbb;text-transform:uppercase}
+input,select,textarea{display:block;width:100%;margin-top:7px;padding:12px;background:#111;color:white;border:1px solid #444;font:inherit}
+.notice{color:#aaa;font-size:12px;line-height:1.6;margin-top:20px}
+footer{padding:28px 7%;font-size:11px;color:#888;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:550px){header{padding:18px 5%}.hero{padding:75px 5%}section{padding:48px 5%}nav{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ARCHIVO <span>X</span></div>
+  <nav>
+    <a href="#expedientes">Expedientes</a>
+    <a href="#ranking">Ranking</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#registro">Inscripción</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <span class="tag">PRIMER EXPEDIENTE ABIERTO</span>
+  <h1>UN NOMBRE.<br>UN EXPEDIENTE.<br><span>UNA HISTORIA.</span></h1>
+  <p>Cada barra deja evidencia. Una organización latinoamericana de freestyle underground donde la trayectoria se construye batalla por batalla y los títulos se ganan con méritos.</p>
+  <p><a class="btn" href="#eventos">EXPLORAR COMPETICIONES ↗</a></p>
+  <p class="id">ARCHIVO: AX-0001 // CONTINENTAL X</p>
+</div>
+
+<section id="expedientes">
+  <div class="kicker">BASE DE DATOS / MCs</div>
+  <h2>EXPEDIENTES ABIERTOS</h2>
+  <p class="intro">Cada MC tiene una historia. Cada logro deja evidencia.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="id">EXPEDIENTE AX-0001</div>
+      <h3>Joshema</h3>
+      <div>🇵🇪 Perú</div>
+      <p class="muted">Campeón de 5 Vidas — Covenant.<br>Capitán Nueva Sangre — Stlear Verse.</p>
+    </article>
+    <article class="card">
+      <div class="id">EXPEDIENTE AX-0002</div>
+      <h3>Matiz</h3>
+      <div>🇨🇱 Chile</div>
+      <p class="muted">Campeón de 5 Vidas — 2026.<br>Campeón de Oboro 2vs2 — 2026.<br>Tercer lugar Kannon 7 to Punch — 2026.</p>
+    </article>
+    <article class="card">
+      <div class="id">EXPEDIENTE AX-0003</div>
+      <h3>Kris</h3>
+      <div>🇪🇸 España</div>
+      <p class="muted">Trayectoria en Underground Freestyle. Medallero pendiente de validación.</p>
+    </article>
+  </div>
+</section>
+
+<section id="ranking">
+  <div class="kicker">CONTINENTAL X / CLASIFICACIÓN</div>
+  <h2>RANKING OFICIAL</h2>
+  <p class="intro">La clasificación competitiva se publicará una vez que se apruebe el reglamento de puntos y se registren los resultados.</p>
+  <table>
+    <thead><tr><th>POS.</th><th>MC</th><th>PAÍS</th><th>PUNTOS</th></tr></thead>
+    <tbody><tr><td>—</td><td>Por definir</td><td>—</td><td>—</td></tr></tbody>
+  </table>
+  <p class="notice">Todavía no hay puntuaciones oficiales asignadas.</p>
+</section>
+
+<section id="eventos">
+  <div class="kicker">EVENTO INAUGURAL / AX-001</div>
+  <h2>PRIMERA EVIDENCIA</h2>
+  <p class="intro">Ocho MCs. Un cuadro. Un solo campeón inaugural en la historia de ARCHIVO X.</p>
+  <div class="event">
+    <div class="id">EXPEDIENTE COMPETITIVO 001</div>
+    <h3>PRIMERA EVIDENCIA</h3>
+    <p class="muted">Formato: eliminación directa · 8 participantes · Cuartos, semifinales y final.</p>
+  </div>
+  <div class="rounds">
+    <div><div class="kicker">01 / CUARTOS</div>
+      <div class="match">Batalla 1<div>MC 1 vs. MC 2</div></div>
+      <div class="match">Batalla 2<div>MC 3 vs. MC 4</div></div>
+      <div class="match">Batalla 3<div>MC 5 vs. MC 6</div></div>
+      <div class="match">Batalla 4<div>MC 7 vs. MC 8</div></div>
+    </div>
+    <div><div class="kicker">02 / SEMIFINALES</div>
+      <div class="match">Semifinal 1<div>Ganador 1 vs. Ganador 2</div></div>
+      <div class="match">Semifinal 2<div>Ganador 3 vs. Ganador 4</div></div>
+    </div>
+    <div><div class="kicker">03 / GRAN FINAL</div>
+      <div class="match">Campeonato<div>Ganador semifinal 1 vs. Ganador semifinal 2</div></div>
+      <div class="card"><div class="id">TÍTULO INAUGURAL</div><h3>CAMPEÓN AX</h3><p class="muted">Por definir en competición.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="registro">
+  <div class="kicker">SOLICITUD DE INGRESO</div>
+  <h2>ABRIR EXPEDIENTE</h2>
+  <p class="intro">Presentá tu candidatura para formar parte de ARCHIVO X.</p>
+  <form id="form">
+    <label>Nombre artístico *<input name="mc" required maxlength="40" placeholder="Nombre de MC"></label>
+    <label>País *<select name="pais" required><option value="">Seleccionar</option><option>Argentina</option><option>Chile</option><option>Colombia</option><option>Costa Rica</option><option>Ecuador</option><option>España</option><option>México</option><option>Perú</option><option>Venezuela</option><option>Otro</option></select></label>
+    <label>Usuario de Discord *<input name="discord" required maxlength="60" placeholder="Tu usuario"></label>
+    <label>Logros / trayectoria<input name="logros" maxlength="200" placeholder="Títulos y experiencia"></label>
+    <label style="grid-column:1/-1">Presentación<textarea name="bio" rows="3" maxlength="500" placeholder="Contanos sobre vos"></textarea></label>
+    <button class="btn" type="submit">REGISTRAR SOLICITUD ↗</button>
+  </form>
+  <p id="msg" class="notice">Prototipo: este formulario muestra una confirmación local. No envía información a Discord ni a la organización.</p>
+</section>
+</main>
+
+<footer>
+  <span>© ARCHIVO X — CADA BARRA DEJA EVIDENCIA.</span>
+  <span>PROTOTIPO 0.1 / CONTINENTAL X</span>
+</footer>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('msg').textContent='Solicitud de demostración completada. Todavía no se envió a la organización; la conexión oficial se implementará en una próxima fase.';
+  this.reset();
+});
+</script>
+</body>
+</html>
